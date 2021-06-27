@@ -13,17 +13,30 @@ class Movie
         $this->genere = $genere;
     }
 
-    public function setFilm($name, $anno, $genere)
+
+    /* public function getFilm()
     {
-        $this->name = $name;
-        $this->anno = $anno;
-        $this->genere = $genere;
+        $film = [$this->nome, $this->anno, $this->genere];
+        return $film;
+    } */
+
+    public function getNome()
+    {
+        return $this->nome;
+    }
+    public function getAnno()
+    {
+        return $this->anno;
+    }
+    public function getGenere()
+    {
+        return $this->genere;
     }
 }
 
 $titanic = new Movie("Titanic", "1997", "Romantico");
-$Minecraft = new Movie("Minecraft The Movie", "2030", "Avventura");
-$batman->setFilm("Batman 3", "2050", "Azione");
+$minecraft = new Movie("Minecraft The Movie", "2030", "Avventura");
+$batman = new Movie("Batman 3", "2050", "Azione");
 
 
 ?>
@@ -35,10 +48,30 @@ $batman->setFilm("Batman 3", "2050", "Azione");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
     <title>OOP - 1</title>
 </head>
 
 <body>
+
+    <div class="movie">
+        <h2><?= $titanic->getNome() ?></h2>
+        <h4><?= $titanic->getAnno() ?></h4>
+        <h5><?= $titanic->getGenere() ?></h5>
+    </div>
+
+    <div class="movie">
+        <h2><?= $minecraft->getNome() ?></h2>
+        <h4><?= $minecraft->getAnno() ?></h4>
+        <h5><?= $minecraft->getGenere() ?></h5>
+    </div>
+
+    <div class="movie">
+        <h2><?= $batman->getNome() ?></h2>
+        <h4><?= $batman->getAnno() ?></h4>
+        <h5><?= $batman->getGenere() ?></h5>
+    </div>
 
 </body>
 
