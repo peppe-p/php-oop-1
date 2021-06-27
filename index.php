@@ -21,6 +21,9 @@ class Movie
     }
 }
 
+$titanic = new Movie("Titanic", "1997", "Romantico");
+$Minecraft = new Movie("Minecraft The Movie", "2030", "Avventura");
+$batman->setFilm("Batman 3", "2050", "Azione");
 
 
 ?>
