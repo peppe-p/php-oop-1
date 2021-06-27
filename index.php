@@ -12,7 +12,16 @@ class Movie
         $this->anno = $anno;
         $this->genere = $genere;
     }
+
+    public function setFilm($name, $anno, $genere)
+    {
+        $this->name = $name;
+        $this->anno = $anno;
+        $this->genere = $genere;
+    }
 }
+
+
 
 ?>
 
