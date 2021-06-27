@@ -5,6 +5,13 @@ class Movie
     public $nome;
     public $anno;
     public $genere;
+
+    public function __construct($nome, $anno, $genere)
+    {
+        $this->nome = $nome;
+        $this->anno = $anno;
+        $this->genere = $genere;
+    }
 }
 
 ?>
