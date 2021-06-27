@@ -49,29 +49,43 @@ $batman = new Movie("Batman 3", "2050", "Azione");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+    section {
+        display: flex;
+        width: 1000px;
+        margin: auto;
+    }
+
+    .movie {
+        margin: 20px;
+        padding: 20px;
+        background-color: royalblue;
+        color: white;
+    }
     </style>
     <title>OOP - 1</title>
 </head>
 
 <body>
 
-    <div class="movie">
-        <h2><?= $titanic->getNome() ?></h2>
-        <h4><?= $titanic->getAnno() ?></h4>
-        <h5><?= $titanic->getGenere() ?></h5>
-    </div>
+    <section>
+        <div class="movie">
+            <h2><?= $titanic->getNome() ?></h2>
+            <h4><?= $titanic->getAnno() ?></h4>
+            <h5><?= $titanic->getGenere() ?></h5>
+        </div>
 
-    <div class="movie">
-        <h2><?= $minecraft->getNome() ?></h2>
-        <h4><?= $minecraft->getAnno() ?></h4>
-        <h5><?= $minecraft->getGenere() ?></h5>
-    </div>
+        <div class="movie">
+            <h2><?= $minecraft->getNome() ?></h2>
+            <h4><?= $minecraft->getAnno() ?></h4>
+            <h5><?= $minecraft->getGenere() ?></h5>
+        </div>
 
-    <div class="movie">
-        <h2><?= $batman->getNome() ?></h2>
-        <h4><?= $batman->getAnno() ?></h4>
-        <h5><?= $batman->getGenere() ?></h5>
-    </div>
+        <div class="movie">
+            <h2><?= $batman->getNome() ?></h2>
+            <h4><?= $batman->getAnno() ?></h4>
+            <h5><?= $batman->getGenere() ?></h5>
+        </div>
+    </section>
 
 </body>
 
