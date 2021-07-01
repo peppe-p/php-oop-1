@@ -33,10 +33,12 @@ class Movie
         return $this->genere;
     }
 }
+$films = [
+    new Movie("Titanic", "1997", "Romantico"),
+    new Movie("Minecraft The Movie", "2030", "Avventura"),
+    new Movie("Batman 3", "2050", "Azione"),
+];
 
-$titanic = new Movie("Titanic", "1997", "Romantico");
-$minecraft = new Movie("Minecraft The Movie", "2030", "Avventura");
-$batman = new Movie("Batman 3", "2050", "Azione");
 
 
 ?>
@@ -68,23 +70,13 @@ $batman = new Movie("Batman 3", "2050", "Azione");
 <body>
 
     <section>
+        <?php foreach ($films as $film) : ?>
         <div class="movie">
-            <h2><?= $titanic->getNome() ?></h2>
-            <h4><?= $titanic->getAnno() ?></h4>
-            <h5><?= $titanic->getGenere() ?></h5>
+            <h2><?= $film->getNome() ?></h2>
+            <h4><?= $film->getAnno() ?></h4>
+            <h5><?= $film->getGenere() ?></h5>
         </div>
-
-        <div class="movie">
-            <h2><?= $minecraft->getNome() ?></h2>
-            <h4><?= $minecraft->getAnno() ?></h4>
-            <h5><?= $minecraft->getGenere() ?></h5>
-        </div>
-
-        <div class="movie">
-            <h2><?= $batman->getNome() ?></h2>
-            <h4><?= $batman->getAnno() ?></h4>
-            <h5><?= $batman->getGenere() ?></h5>
-        </div>
+        <?php endforeach ?>
     </section>
 
 </body>
